@@ -1,18 +1,71 @@
+html{
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 4rem;
+}
+
+h2{
+	font-family: 'Carme', sans-serif;
+}
+
+ul,ol,dl,p {
+	font-size: 1.5rem;
+}
+
+li, p {
+	line-height: 1.5;
+}
+
+/* Description list styles */
+
+
+dd, dt {
+	line-height: 1.5;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-bottom: 1.5rem;
+}
+
+
 .container{
 	background-color: #FFE897;
 }
 
 .header{
 	background-color: #6CB280;
+	text-align: center;
 }
 
 .logo{
 	background-color: #087F7F;
 }
 
-.menu{
+.navigation{
 	background-color: #0CBFBF;
 }
+
+.navigation a{
+	display: block;
+	text-decoration: none;
+}
+
+.navigation a:hover{
+	color:#8C8C8C;
+}
+
+.navigation a.active{
+	text-decoration: underline;
+}	
 
 .content{
 	background-color: #FF967D;
