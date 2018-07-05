@@ -1,16 +1,20 @@
 html{
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 1.6;
+	background-color: #FCFCFC;
 }
 
 h1{
 	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
 	font-size: 4rem;
 }
 
 h2{
-	font-family: 'Carme', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 2rem;
 }
 
 ul,ol,dl,p {
@@ -39,36 +43,70 @@ dd {
 
 .container{
 	background-color: #FFE897;
+	padding: 80px 30px 40px 30px; 
+	background-color: #FCFCFC; /*same as HTML bg color */
 }
 
 .header{
-	background-color: #6CB280;
+	background-color: #141212;
 	text-align: center;
+	margin:-180px 0 -720px -50px;
+	padding: 360px 0 0 0;
+}
+
+#siteName {
+	color:#ffffff;
+	line-height: 0.2;
+}
+
+#siteSubtitle{
+	color: #66CCE2;
+	line-height: 0.5;
 }
 
 .logo{
-	background-color: #087F7F;
+	
 }
 
+
 .navigation{
-	background-color: #0CBFBF;
+	font-family: 'Carme', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 500;
+	padding-top: 60px;
 }
 
 .navigation a{
 	display: block;
 	text-decoration: none;
+	color: #AAA7A7;
 }
 
 .navigation a:hover{
-	color:#8C8C8C;
+	color: #CB50A7;
 }
 
 .navigation a.active{
+	color: #CB50A7;
 	text-decoration: underline;
+}
+
+.sosmed {
+	margin-top: 10px;
 }	
 
+.sosmed img{
+	margin: 0 3px 0 3px;
+	background-color: #AAA7A7;
+}
+
+.sosmed img:hover{
+	background-color: #66CCE2;
+}		
+
 .content{
-	background-color: #FF967D;
+	background-color: #FCFCFC;
+
 }
 
 .footer{
