@@ -5,24 +5,17 @@ html{
 	background-color: #FCFCFC;
 }
 
-h1{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	font-size: 4rem;
-}
-
-h2{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	font-size: 2rem;
-}
-
 ul,ol,dl,p {
-	font-size: 1.5rem;
+	font-size: 1.33rem;
 }
 
 li, p {
 	line-height: 1.5;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Description list styles */
@@ -40,6 +33,31 @@ dd {
 	margin-bottom: 1.5rem;
 }
 
+/* Own styling */
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 4rem;
+}
+
+h2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 2.33rem;
+}
+
+h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1.33rem;
+}
+
+p{
+	font-family: 'Carme', sans-serif;
+	font-weight: 400;
+	font-size: 1.17rem;
+}
 
 .container{
 	background-color: #FFE897;
@@ -106,9 +124,26 @@ dd {
 
 .content{
 	background-color: #FCFCFC;
+	padding: 180px 50px 0 50px;	
+}
 
+.content a{
+	box-shadow: inset 0 -16px 0 #ff80ff;
+	transition: background .15s;
+}
+
+.content a:hover{
+	background-color: #ff80ff;
+	color: #000;
 }
 
 .footer{
-	background-color: #7A89B2;
+	padding-top: 50px;
+	text-align: center;
+}
+
+#footer{
+	font-size: 1rem;
+	color: #AAA7A7;
+	line-height: 0.2;
 }
