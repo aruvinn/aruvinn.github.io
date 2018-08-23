@@ -25,16 +25,10 @@
 	grid-row-end: 4;
 }
 
-.logo{
-
-}
-
-.menu{
-
-}
-
 .project{
-	
+	display: grid;
+	grid-template-columns: 350px 2fr;
+	grid-column-gap: 20px;
 }
 
 
