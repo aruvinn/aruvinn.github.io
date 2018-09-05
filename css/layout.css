@@ -1,3 +1,6 @@
+/* DESKTOP DESIGN YALL */
+@media screen and (min-device-width: 720px) and (orientation: landscape){
+
 .container{
 	display: grid;
 	grid-template-columns: 400px 1fr;
@@ -31,9 +34,11 @@
 	grid-column-gap: 20px;
 }
 
+} /*END OF DESKTOP DESIGN*/
 
-/* Smallest design: smartphone potrait */
-@media screen and (max-width: 500px) {
+
+/* Smallest design: smartphone potrait MOBILE DESIGN YALL */
+@media screen and (max-device-width: 812px) {
 	.container{
 		display: grid;
 		grid-template-columns: 1fr;
@@ -61,49 +66,4 @@
 		grid-row-end: 4;
 	}
 
-}
-
-/* Medium layout: smartphone landscape, tablet potraits */
-@media screen and (min-width: 501px) and (max-width: 1050px) {
-	.container{
-		display: grid;
-		grid-template-columns: 1fr;
-	}
-
-	.header{
-		grid-column-start: 1;
-		grid-column-end: 9;
-		grid-row-start: 1;
-		grid-row-end: 2;
-		display: grid;
-
-	}
-
-	.logo{
-		grid-column-start: 1;
-		grid-column-end: 3;
-		grid-row-start: 1;
-		grid-row-end: 2;
-	}
-
-	.menu{
-		grid-column-start: 6;
-		grid-column-end: 9;
-		grid-row-start: 1;
-		grid-row-end: 2;
-	}
-
-	.content{
-		grid-column-start: 1;
-		grid-column-end: 3;
-		grid-row-start: 2;
-		grid-row-end: 3;
-	}
-
-	.footer{
-		grid-column-start: 1;
-		grid-column-end: 3;
-		grid-row-start: 3;
-		grid-row-end: 4;
-	}
-}		
+} /* END OF MOBILE DESIGN */
