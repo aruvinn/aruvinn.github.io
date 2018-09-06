@@ -107,6 +107,7 @@ p{
 
 .content{
 	background-color: #FCFCFC;
+	padding-bottom: 30px;
 }
 
 .content a{
@@ -142,8 +143,9 @@ p{
 }
 
 .footer{
-	padding-top: 50px;
+	border-top: 1px solid black;
 	text-align: center;
+	padding-top: 30px;
 }
 
 #footer{
@@ -153,7 +155,7 @@ p{
 /* END OF GENERAL STYLING */
 
 
-/* DESKTOP DESIGN YALL */
+/* DESKTOP DESIGN */
 @media screen and (min-device-width: 720px) and (orientation: landscape){
 .container{
 	padding: 80px 30px 40px 30px; 
@@ -204,7 +206,12 @@ p{
 }	
 
 .content{
-	padding: 0 50px 0 50px;	
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.footer{
+	margin: 0 50px 0 50px;	
 }
 
 } /*END OF DESKTOP DESIGN*/
