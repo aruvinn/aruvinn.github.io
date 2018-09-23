@@ -5,6 +5,10 @@ html{
 	background-color: #FCFCFC;
 }
 
+body{
+	display: block;
+}
+
 ul,ol,dl,p {
 	font-size: 1.33rem;
 }
@@ -119,6 +123,32 @@ p{
 	background-color: #ff80ff;
 	color: #ffffff;
 	font-style: italic;
+}
+
+
+/* ABOUT section */
+.showInfo:focus ~ .moreInfo{
+	display: block;
+}
+
+.showInfo:focus ~ .hideInfo{
+	display: block;
+}
+
+.showInfo:focus ~ .moreInfo{
+	display: none;
+}
+
+.hideInfo:focus ~ .moreInfo{
+	display: none;
+}
+
+.hideInfo{
+	display: none;
+}
+
+.moreInfo{
+	display: none;
 }
 
 .project h1, h2, h3, h4, p{
