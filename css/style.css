@@ -125,30 +125,44 @@ p{
 	font-style: italic;
 }
 
-
-/* ABOUT section */
-.showInfo:focus ~ .moreInfo{
-	display: block;
-}
-
-.showInfo:focus ~ .hideInfo{
-	display: block;
-}
-
-.showInfo:focus ~ .moreInfo{
-	display: none;
-}
-
-.hideInfo:focus ~ .moreInfo{
-	display: none;
-}
-
-.hideInfo{
+/* ABOUT take 2 */
+.moreInfo-state{
 	display: none;
 }
 
 .moreInfo{
-	display: none;
+	opacity: 0;
+	max-height: 0;
+	font-size: 0;
+	transition: .15s;
+}
+
+.moreInfo-state:checked ~ .moreInfo{
+	opacity: 1;
+	font-size: inherit;
+	max-height: 999em;
+}
+
+.moreInfo-state ~ .moreInfo-trigger:before{
+	content: 'Read More>>';
+}
+
+.moreInfo-state:checked ~ .moreInfo-trigger:before{
+	content: '<<Show Less';
+}
+
+.moreInfo-trigger{
+	font-family: 'Carme', sans-serif;
+	font-weight: 600;
+	font-size: 1.5rem;
+	box-shadow: inset 0 -8px 0 #65cbe2;
+	transition: background .15s;
+}
+
+.moreInfo-trigger:hover{
+	background-color: #65cbe2;
+	color: #ffffff;
+	font-style: italic;
 }
 
 .project h1, h2, h3, h4, p{
@@ -173,9 +187,9 @@ p{
 }
 
 .footer{
-	border-top: 1px solid black;
+	border-top: 1px solid #AAA7A7;
 	text-align: center;
-	padding-top: 30px;
+	padding: 10px 0 10px 0;
 }
 
 #footer{
@@ -185,7 +199,7 @@ p{
 /* END OF GENERAL STYLING */
 
 
-/* DESKTOP DESIGN */
+/* tABLET DESIGN - LANDSCAPE & DESKTOP DESIGN */
 @media screen and (min-device-width: 720px) and (orientation: landscape){
 .container{
 	padding: 80px 30px 40px 30px; 
@@ -231,10 +245,6 @@ p{
 	margin-top: 60px;
 }	
 
-#sosmed_footer {
-	display: none;
-}	
-
 .content{
 	padding-left: 50px;
 	padding-right: 50px;
@@ -247,6 +257,45 @@ p{
 } /*END OF DESKTOP DESIGN*/
 
 
+
+/* TABLET DESIGN - POTRAIT */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.header{
+	margin:	-10px -10px 0 -10px;
+	padding: 15px 0 5px 0;
+}
+
+.logo img{
+	max-height: 112.5px;
+	max-width: 120px;
+}
+
+#siteName {
+	color:#ffffff;
+	line-height: 0.2;
+	font-weight: 400;
+}
+
+#siteSubtitle{
+	color: #66CCE2;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2em;
+	line-height: 1;
+}
+
+.navigation a{
+	display: inline-block;
+	padding: 10px 15px 10px 15px;
+	position: sticky;
+}
+
+.content{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+  
+}
 
 
 /* Smallest design: smartphone potrait MOBILE DESIGN YALL */
@@ -276,10 +325,5 @@ p{
 	display: inline-block;
 	padding: 10px 15px 10px 15px;
 }
-
-#sosmed_header {
-	display: none;
-}
-
 
 } /* END OF MOBILE DESIGN */
