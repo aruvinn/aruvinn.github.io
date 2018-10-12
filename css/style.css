@@ -1,6 +1,5 @@
 html{
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
-	font-size: 12px;
 	line-height: 1.6;
 	background-color: #FCFCFC;
 }
@@ -9,11 +8,11 @@ body{
 	display: block;
 }
 
-ul,ol,dl,p {
+ul,ol,dl{
 	font-size: 1.33rem;
 }
 
-li, p {
+li {
 	line-height: 1.5;
 }
 
@@ -130,17 +129,19 @@ p{
 	display: none;
 }
 
-.moreInfo{
+.moreInfo-hide{
 	opacity: 0;
 	max-height: 0;
 	font-size: 0;
 	transition: .15s;
+	z-index: 1;
 }
 
-.moreInfo-state:checked ~ .moreInfo{
+.moreInfo-state:checked ~ .moreInfo-wrap .moreInfo-hide{
 	opacity: 1;
 	font-size: inherit;
 	max-height: 999em;
+	text-align: justify;
 }
 
 .moreInfo-state ~ .moreInfo-trigger:before{
@@ -157,12 +158,18 @@ p{
 	font-size: 1.5rem;
 	box-shadow: inset 0 -8px 0 #65cbe2;
 	transition: background .15s;
+	z-index: 10;
 }
 
 .moreInfo-trigger:hover{
 	background-color: #65cbe2;
 	color: #ffffff;
 	font-style: italic;
+}
+
+.img-round{
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
 }
 
 .project h1, h2, h3, h4, p{
@@ -186,6 +193,8 @@ p{
 	font-weight: 400;
 }
 
+
+
 .footer{
 	border-top: 1px solid #AAA7A7;
 	text-align: center;
@@ -199,7 +208,7 @@ p{
 /* END OF GENERAL STYLING */
 
 
-/* tABLET DESIGN - LANDSCAPE & DESKTOP DESIGN */
+/* TABLET DESIGN - LANDSCAPE & DESKTOP DESIGN */
 @media screen and (min-device-width: 720px) and (orientation: landscape){
 .container{
 	padding: 80px 30px 40px 30px; 
@@ -222,7 +231,7 @@ p{
 
 #siteName {
 	color:#ffffff;
-	line-height: 0.2;
+	line-height: 1;
 	font-weight: 400;
 }
 

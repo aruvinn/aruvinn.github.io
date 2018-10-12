@@ -28,6 +28,13 @@
 	grid-row-end: 4;
 }
 
+.about{
+	display: grid;
+	grid-template-columns: 350px 2fr;
+	grid-column-gap: 20px;
+}
+
+
 .project{
 	display: grid;
 	grid-template-columns: 350px 2fr;
@@ -35,6 +42,44 @@
 }
 
 } /*END OF DESKTOP DESIGN*/
+
+/* TABLET DESIGN - POTRAIT */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.container{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.header{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		
+	}
+
+	.content{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+
+	.project{
+		display: grid;
+		grid-template-columns: 350px 2fr;
+		grid-column-gap: 20px;
+	}
+
+	.footer{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+
+  
+}
 
 
 /* Smallest design: smartphone potrait MOBILE DESIGN YALL */
