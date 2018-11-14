@@ -172,6 +172,23 @@ p{
 	clip-path: circle(50% at 50% 50%);
 }
 
+.sectionHeaderLine{
+    background: #e6e6e6;
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.sectionHeaderText{
+    background: #fff;
+    padding: 0 .8em 0 0;
+    position: relative;
+    z-index: 1;
+}
+
 .project h1, h2, h3, h4, p{
 	margin: 0.5em 0 0.5em 0;
 	padding: 0;
