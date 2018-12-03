@@ -124,7 +124,10 @@ p{
 	font-style: italic;
 }
 
-/* ABOUT take 2 */
+/* 
+ * HIDDEN ABOUT SECTION based on example from Treehouse Community  by Patrik Horváth
+ * https://codepen.io/Idered/pen/AeBgF
+*/
 .moreInfo-state{
 	display: none;
 }
@@ -153,6 +156,7 @@ p{
 }
 
 .moreInfo-trigger{
+	position: relative;
 	font-family: 'Carme', sans-serif;
 	font-weight: 600;
 	font-size: 1rem;
@@ -172,18 +176,17 @@ p{
 	clip-path: circle(50% at 50% 50%);
 }
 
+/* experimental styling for the header border */
 .sectionHeaderLine:before {
     left: 0;
 }
-
-/* experimental styling for the header border */
 
 .sectionHeaderLine:before{
     background: #e6e6e6;
     content: "";
     display: block;
     height: 3px;
-   /*  position: absolute; */
+    position: relative;
     top: 50%;
     width: 100%;
 }
@@ -198,6 +201,7 @@ p{
     position: relative;
     z-index: 1;
 }
+
 
 /* end of experimental styling for header border */
 
@@ -225,7 +229,7 @@ p{
 
 
 .footer{
-	border-top: 1px solid #AAA7A7;
+	border-top: 3px solid #e6e6e6;
 	text-align: center;
 	padding: 10px 0 10px 0;
 }
