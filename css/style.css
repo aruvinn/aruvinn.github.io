@@ -205,6 +205,10 @@ p{
 
 /* end of experimental styling for header border */
 
+.section{
+	margin-bottom: 50px;
+}
+
 .project h1, h2, h3, h4, p, img{
 	margin: 0.5rem 0 0.5rem 0;
 	padding: 0;
@@ -302,7 +306,7 @@ p{
 
 
 /* TABLET DESIGN - POTRAIT */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (orientation: portrait) {
 
 .header{
 	margin:	-10px -10px 0 -10px;
